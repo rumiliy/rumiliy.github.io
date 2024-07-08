@@ -4,3 +4,16 @@
 
 layout: home
 ---
+
+Some info
+
+
+This is followed by posts as necessary
+
+## some more info
+
+some more info
+
+### some more info
+
+some more info
