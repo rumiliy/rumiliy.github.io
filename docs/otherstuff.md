@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Other Stuff
-permalink: /patientinfo/
+permalink: /otherstuff/
 ---
 
 
