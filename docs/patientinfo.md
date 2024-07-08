@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Patient Info
+title: Patient Information
 permalink: /patientinfo/
 ---
-# Patient Information
+
 
 ## Current work hours are:
 
