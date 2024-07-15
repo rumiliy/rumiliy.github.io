@@ -16,6 +16,23 @@
     <link href="css/owl.theme.default.min.css" rel="stylesheet">
     <link href="css/templatemo-medic-care.css" rel="stylesheet">
     
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Calculate years of experience
+            const startYear = 2002;
+            const currentYear = new Date().getFullYear();
+            const yearsOfExperience = currentYear - startYear;
+
+            // Display the result in the HTML element
+            // document.getElementById('experience').textContent = yearsOfExperience;
+            // var expText = `<p class="featured-text"><span class="featured-number">${yearsOfExperience}</span> Years<br> of Experiences</p>`;
+            // console.log(expText);
+            // document.getElementById('experience').textContent = expText;
+            document.getElementById('x1').textContent = yearsOfExperience ;
+        });
+    </script>
+
 </head>
 <body id="top">
     <main>
@@ -110,18 +127,22 @@
                             patients and their families too. In her free time, she practices mindful meditation.</p>
                        
                         <!--p id="experienceOutput"></p-->
-                        <!--
-                            <p>Protect yourself and others by wearing masks and washing hands frequently. Outdoor is safer than indoor for gatherings or holding events. People who get sick with Coronavirus disease (COVID-19) will experience mild to moderate symptoms and recover without special treatments.</p>
-
-                            <p>You can feel free to use this CSS template for your medical profession or health care related websites. You can <a rel="nofollow" href="http://paypal.me/templatemo" target="_blank">support us a little</a> via PayPal if this template is good and useful for your work.</p>
--->
+                        
                     </div>
+                    <!--
                     <div class="col-lg-4 col-md-5 col-12 mx-auto">
                         <div class="featured-circle bg-white shadow-lg d-flex justify-content-center align-items-center">
-                            <p class="featured-text"><span class="featured-number">22</span> Years<br> of Experiences
-                            </p>
+                            <p class="featured-text"><span class="featured-number">22</span> Years<br> of Experiences</p>
                         </div>
                     </div>
+                -->
+                    <div class="col-lg-4 col-md-5 col-12 mx-auto">
+                        <div class="featured-circle bg-white shadow-lg d-flex justify-content-center align-items-center">
+                            <p class="featured-text"><span class="featured-number" id="x1"></span> Years<br> of Experiences</p>
+                        </div>
+                    </div>
+                    
+                    
                 </div>
             </div>
         </section>
@@ -412,34 +433,11 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/scrollspy.min.js"></script>
+    
     <script src="js/custom.js"></script>
 
 
 
-    <script>
-        // Set the fixed start year
-        var startYear = 2002;
-        
-        function calculateExperience() {
-            var currentDate = new Date();
-        
-            // Create a date object for the start year
-            var startDate = new Date(startYear, 0, 1); // January 1st of the start year
-        
-            // Calculate the difference in years
-            var years = currentDate.getFullYear() - startDate.getFullYear();
-        
-            // Adjust if the current date is before the start date anniversary
-            if (currentDate.getMonth() < startDate.getMonth() || (currentDate.getMonth() === startDate.getMonth() && currentDate.getDate() < startDate.getDate())) {
-                years--;
-            }
-        
-            // Display the result
-            document.getElementById('experienceOutput').textContent = "Years of experience: " + years;
-        }
-        
-        // Calculate experience immediately on page load
-        calculateExperience();
-        </script>
+    
 </body>
 </html>
